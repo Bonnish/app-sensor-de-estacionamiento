@@ -44,13 +44,13 @@ ESP32
 │
 ├── Usuarios
 │   ├── 1
-│   │   ├── email: "marco@gmail.com"
+│   │   ├── email: "demo@gmail.com"
 │   │   ├── password: "1234a"
-│   │   └── usuario: "Marco"
+│   │   └── usuario: "Demo1"
 │   └── 2
-│       ├── email: "simon@gmail.com"
+│       ├── email: "demo2@gmail.com"
 │       ├── password: "123a"
-│       └── usuario: "Simon"
+│       └── usuario: "Demo2"
 │
 ├── distancia: 5.26
 └── sensorActivo: false
