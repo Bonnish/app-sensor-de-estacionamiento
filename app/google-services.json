@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "628846741441",
+    "firebase_url": "https://appmovilc1-2ac10-default-rtdb.firebaseio.com",
+    "project_id": "appmovilc1-2ac10",
+    "storage_bucket": "appmovilc1-2ac10.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628846741441:android:bdd7325e8e3cff74585140",
+        "android_client_info": {
+          "package_name": "cl.inacap.sensor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtacGy5n4crFb-w1ZNlpCWwM3DFJSEZMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
