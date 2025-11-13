@@ -1,7 +1,7 @@
 # App Sensor de Estacionamiento
 ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)![Android Studio](https://img.shields.io/badge/android%20studio-346ac1?style=for-the-badge&logo=android%20studio&logoColor=white)  
 Aplicación móvil desarrollada en Android Studio (Kotlin) que se comunica con un ESP32 para medir distancia y controlar un sensor ultrasónico en tiempo real.
-Este proyecto fue realizado como parte de una evaluación del instituto INACAP, integrando hardware IoT, Firebase y Android.
+Este proyecto fue realizado como parte de una evaluación del instituto, integrando hardware IoT, Firebase y Android.
 
 # Funciones principales
 ## Inicio de sesión
