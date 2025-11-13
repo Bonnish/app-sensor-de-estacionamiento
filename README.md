@@ -7,13 +7,13 @@ Este proyecto fue realizado como parte de una evaluación del instituto INACAP, 
 ## Inicio de sesión
 
 La app valida email y contraseña desde Firebase Realtime Database en la ruta:
-```
+```kotlin
 ESP32/Usuarios/
 ```
 ## Activar / desactivar sensor
 
 El botón modifica el valor:
-```
+```kotlin
 ESP32/sensorActivo
 ```
 
@@ -22,7 +22,7 @@ permitiendo encender o apagar el sensor del ESP32 desde la app.
 ## Ver distancia en tiempo real
 
 Lectura continua del valor:
-```
+```kotlin
 ESP32/distancia
 ```
 
@@ -39,7 +39,7 @@ Firebase Realtime Database
 ESP32 + Sensor HC-SR04
 
 ## Estructura básica de Firebase
-``````
+```kotlin
 ESP32
 │
 ├── Usuarios
