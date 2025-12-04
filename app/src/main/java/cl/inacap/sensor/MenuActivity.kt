@@ -10,7 +10,6 @@ import android.content.Intent
 class MenuActivity : AppCompatActivity() {
 
     private lateinit var txtBienvenida: TextView
-    private lateinit var btnSensor: Button
     private lateinit var btnDistancia: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +17,6 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         txtBienvenida = findViewById(R.id.txtBienvenida)
-        btnSensor = findViewById(R.id.btnSensor)
         btnDistancia = findViewById(R.id.btnDistancia)
 
         val nombre = intent.getStringExtra("usuario")
@@ -28,25 +26,12 @@ class MenuActivity : AppCompatActivity() {
             .child("ESP32")
             .child("sensorActivo")
 
-        btnSensor.setOnClickListener {
-
-            sensorRef.get().addOnSuccessListener { snapshot ->
-                val estadoActual = snapshot.getValue(Boolean::class.java) ?: false
-                val nuevoEstado = !estadoActual  // Invierte el estado
-
-                sensorRef.setValue(nuevoEstado)
-
-                if (nuevoEstado) {
-                    Toast.makeText(this, "Sensor ACTIVADO", Toast.LENGTH_SHORT).show()
-                } else {
-                    Toast.makeText(this, "Sensor DESACTIVADO", Toast.LENGTH_SHORT).show()
-                }
-            }
-        }
 
         btnDistancia.setOnClickListener {
             val intent = Intent(this, DistanciaActivity::class.java)
             startActivity(intent)
+
         }
     }
 }
+

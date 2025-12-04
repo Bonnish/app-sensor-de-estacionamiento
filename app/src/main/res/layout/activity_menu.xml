@@ -12,13 +12,6 @@
         android:layout_marginBottom="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/btnSensor"
-        android:text="Activar / Desactivar Sensor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
     <Button
         android:id="@+id/btnDistancia"
         android:text="Ver distancia"
