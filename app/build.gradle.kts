@@ -42,8 +42,7 @@ dependencies {
     // Firebase usando BOM
     implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
     implementation("com.google.firebase:firebase-database-ktx")
-
-
+    implementation("com.google.firebase:firebase-auth-ktx")   // <-- FALTA ESTO
 
     // AndroidX base
     implementation(libs.androidx.core.ktx)
@@ -57,3 +56,4 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+

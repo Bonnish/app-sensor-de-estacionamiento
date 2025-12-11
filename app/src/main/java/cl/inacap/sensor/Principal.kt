@@ -45,11 +45,14 @@ class Principal : AppCompatActivity() {
                     if (email == emailInput && password == passInput) {
                         encontrado = true
                         val nombreUsuario = userSnap.child("usuario").value.toString()
+                        val userId = userSnap.key.toString()
                         val intent = Intent(this, MenuActivity::class.java)
                         intent.putExtra("usuario", nombreUsuario)
+                        intent.putExtra("userId", userId)
                         startActivity(intent)
                         finish()
                     }
+
 
                 }
 

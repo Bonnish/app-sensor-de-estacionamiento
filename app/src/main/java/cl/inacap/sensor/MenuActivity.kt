@@ -10,6 +10,7 @@ import android.content.Intent
 class MenuActivity : AppCompatActivity() {
 
     private lateinit var txtBienvenida: TextView
+    private lateinit var btnCambiarPass: Button
     private lateinit var btnDistancia: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +19,7 @@ class MenuActivity : AppCompatActivity() {
 
         txtBienvenida = findViewById(R.id.txtBienvenida)
         btnDistancia = findViewById(R.id.btnDistancia)
+        btnCambiarPass = findViewById(R.id.btnCambiarPass)
 
         val nombre = intent.getStringExtra("usuario")
         txtBienvenida.text = "Bienvenido, $nombre"
@@ -30,8 +32,14 @@ class MenuActivity : AppCompatActivity() {
         btnDistancia.setOnClickListener {
             val intent = Intent(this, DistanciaActivity::class.java)
             startActivity(intent)
-
         }
+
+        btnCambiarPass.setOnClickListener {
+            val intent = Intent(this, CambiarContrasenaActivity::class.java)
+            intent.putExtra("userId", intent.getStringExtra("userId"))
+            startActivity(intent)
+        }
+
     }
 }
 
